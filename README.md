@@ -2,6 +2,8 @@
 
 ##Descripcion
 App conectada a Firebase para la administracion de empleados y candidatos de la empresa.
+por el tiempo determinado para realizar la prueba la misma no contiene Lazy loading (Modulos separados para evitar la carga), ni authGuard(sistema de Usuarios, para el uso de la aplicación)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.2.
 
 ## Development server
