@@ -1,0 +1,7 @@
+{
+    "/api/*": {
+        "target": "https://ibillboard.com",
+        "secure": false,
+        "logLevel": "debug"
+    }
+}

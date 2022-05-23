@@ -1,0 +1,23 @@
+<div class="table-responsive">
+    <table class="table table-hover">
+        <thead>
+          <tr>
+            <th scope="col">Nombre</th>
+            <th scope="col">Apellido</th>
+            <th scope="col">Trabajo</th>
+            <th scope="col">Fecha de Nacimineto</th>            
+          </tr>
+        </thead>
+    <tbody>
+    <tr class="table-dark animate__animated  animate__fadeInLeft" *ngFor="let employee of employeesList ">
+        <th scope="row">{{employee.name}}</th>
+        <td>{{employee.lastname}}</td>
+        <td>{{employee.job}}</td>
+        <td >{{employee.birth}}</td>
+        <td class="text-center justify-content-around">
+            <button type="button" class="btn btn-outline-warning" (click)="onGoToEdit(employee)">Editar</button>             
+        </td>
+      </tr>
+    </tbody>
+    </table>
+</div>

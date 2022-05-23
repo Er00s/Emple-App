@@ -1,0 +1,43 @@
+<form
+    [formGroup]="employeeForm">
+    <fieldset>
+      <legend>Fomulario de Empleado</legend>
+      <div class="form-group row">
+        <label for="name" class="col-sm-2 col-form-label">Name:</label>
+        <div class="col-sm-10">
+          <input type="text"  class="form-control-plaintext"  name="name" id="name"  required  formControlName="name" placeholder="Inserte un nombre">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="name" class="col-sm-2 col-form-label">lastname:</label>
+        <div class="col-sm-10">
+          <input type="text"  class="form-control-plaintext"  name="lastname" id="lastname"  required  formControlName="lastname" placeholder="Inserte un apellido">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="name" class="col-sm-2 col-form-label">birth:</label>
+        <div class="col-sm-10">
+          <input type="date"  class="form-control-plaintext" name="birth" id="birth"  required  formControlName="birth" >
+        </div>
+      </div>
+     
+      <div class="form-group">
+        <label for="exampleSelect1" class="form-label mt-4">Job:</label>
+        <select class="form-select" id="exampleSelect1" name="job" id="job"  required  formControlName="job">
+          <option  value="full-stack developer">full-stack developer</option>
+          <option  value="sw admin">sw admin</option>
+          <option  value="front-end developer">front-end developer</option>
+          <option  value="help desk">help desk</option>
+          <option  value="scrum master">scrum master</option>
+          <option  value="product manager">product manager</option>               
+        </select>
+      </div>           
+    </fieldset>
+    <div class="container w-100 text-end mt-1">
+      <button (click)="saveEmployee()" class="btn btn-outline-success me-1">Guardar cambios</button>
+      <button (click)="deleteEmployee()" class="btn btn-outline-danger">Despedir</button> 
+    </div>
+
+   
+  </form>
+

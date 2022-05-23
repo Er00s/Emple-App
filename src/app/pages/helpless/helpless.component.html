@@ -1,0 +1,48 @@
+<div class="table-responsive">
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th scope="col">Nombre</th>
+        <th scope="col">Apellido</th>
+        <th scope="col">Trabajo</th>
+        <th scope="col">Fecha de Nacimineto</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr
+        class="table-dark table-dark animate__animated animate__fadeInLeft"
+        *ngFor="let helpless of helplessList"
+      >
+        <th scope="row">{{ helpless.name }}</th>
+        <td>{{ helpless.lastname }}</td>
+        <td>{{ helpless.job }}</td>
+        <td>{{ helpless.birth }}</td>
+        <td class="text-center justify-content-around">
+          <button
+            type="button"
+            class="btn btn-outline-success"
+            (click)="onGoToEdit(helpless)"
+          >
+            Contratar
+          </button>
+          <button
+            type="button"
+            class="btn btn-outline-danger ms-1"
+            (click)="onDiscard(helpless)"
+          >
+            Descartar
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="container w-100 text-end">
+    <button
+      type="button"
+      class="btn btn-outline-success"
+      (click)="onGoToEdit()"
+    >
+      Agregar Candidato
+    </button>
+  </div>
+</div>
